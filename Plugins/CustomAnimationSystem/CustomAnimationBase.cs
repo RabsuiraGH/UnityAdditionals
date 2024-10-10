@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using ModestTree;
 
 namespace Core.CustomAnimationSystem
 {
@@ -40,7 +39,7 @@ namespace Core.CustomAnimationSystem
                 newTag.Add(tags[i]);
             }
 
-            AnimationAdditionalTag = newTag.Join("_");
+            AnimationAdditionalTag = string.Join("_", newTag);
         }
 
         public virtual void ChangeAnimationSpeed(float newSpeed)
